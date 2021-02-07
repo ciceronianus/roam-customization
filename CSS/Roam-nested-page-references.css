@@ -1,0 +1,71 @@
+/*
+Author:: @CatoMinor3
+Version:: 2.0
+Date:: December 28th, 2020
+Changes log
+- 2.0 - support for the latest version of Roam
+
+Support: 
+- Paypal: https://www.paypal.me/catominor3
+- Patreon: https://www.patreon.com/catominor
+
+*/
+
+:root {
+    --custom-background-color: lightsteelblue;
+    --custom-background-color-hover: orange;
+    }
+
+
+.rm-page-ref--link{
+   color:black !important;
+    background: linear-gradient(0deg, var(--custom-background-color) 2px, white 1px, transparent 1px);
+    background-position: 0 100%;
+    line-height: 24px;
+    padding-bottom: 4px;
+}
+
+.rm-page-ref--link:hover{
+   color:black !important;
+    background: linear-gradient(0deg, var(--custom-background-color-hover) 2px, white 1px, transparent 1px);
+    background-position: 0 100%;
+    text-decoration: none;
+    line-height: 24px;
+    padding-bottom: 4px;
+}
+
+.rm-page-ref--link .rm-page-ref--link {
+color: black !important;
+  background: linear-gradient(0deg, var(--custom-background-color) 2px, white 1px, transparent 1px);
+    background-position: 0 100%;
+   line-height: 28px;
+    padding-bottom: 8px;
+}
+
+.rm-page-ref--link .rm-page-ref--link:hover {
+color: black !important;
+  background: linear-gradient(0deg, var(--custom-background-color-hover) 2px, white 1px, transparent 1px);
+    background-position: 0 100%;
+   line-height: 28px;
+    padding-bottom: 8px;
+}
+
+
+.rm-page-ref--link .rm-page-ref--link .rm-page-ref--link {
+color: black !important;
+background: linear-gradient(0deg, var(--custom-background-color) 2px, white 1px, transparent 1px);
+    background-position: 0 100%;
+   line-height: 32px;
+    padding-bottom: 12px;
+}
+
+
+.rm-page-ref--link .rm-page-ref--link .rm-page-ref--link:hover {
+color: blaoutlining for headlines or comments.ck !important;
+background: linear-gradient(0deg, var(--custom-background-color-hover) 2px, white 1px, transparent 1px);
+    background-position: 0 100%;
+   line-height: 32px;
+    padding-bottom: 12px;
+}
+
+
