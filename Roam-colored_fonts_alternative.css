@@ -1,0 +1,257 @@
+/*
+Author:: @CatoMinor3
+Version:: 3.5 (alternative)
+Date:: February 6, 2021
+Changes log:
+- 3.5 - changed c: to c-
+- 3.0 - code adapted for the new classes in Roam
+- 2.1 - code adaptated for future support of colour shades (different opacity), 
+download the additonal CSS here: https://gist.github.com/ciceronianus/5d7b224658b7a9832a6249a13091aa9d
+Support: 
+- Paypal: https://www.paypal.me/catominor3
+- Patreon: https://www.patreon.com/catominor
+How to use this? Simply write c:COLOR (see supported colors below) and follow it with 
+the highlighted text, bold text or .rm-italicsphasis. 
+*/
+
+/* ---------------- Roam colors -----------------*/
+
+/*Supporter colors:
+https://github.com/mrmrs/colors
+.navy { color: #001F3F; }
+.blue { color: #0074D9; }
+.aqua { color: #7FDBFF; }
+.teal { color: #39CCCC; }
+.olive { color: #3D9970; }
+.green { color: #2ECC40; }
+.lime { color: #01FF70; }
+.yellow { color: #FFDC00; }
+.orange { color: #FF851B; }
+.red { color: #FF4136; }
+.fuchsia { color: #F012BE; }
+.purple { color: #B10DC9; }
+.maroon { color: #85144B; }
+.silver { color: #DDDDDD; }
+.gray { color: #AAAAAA; }
+.black { color: #111111; }
+*/
+[data-tag^="c-"] {
+    	display:none !important;  
+}
+
+[data-tag^="c-"] + .rm-highlight, 
+[data-tag^="c-"] + span > .rm-page-ref--link {
+    color: white !important;
+	border-radius: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-weight: bold;
+}
+
+[data-tag^="c-navy"] + .rm-highlight,
+[data-tag^="c-navy"] + span > .rm-page-ref--link {
+	background-color: #001F3F !important;
+}
+
+[data-tag^="c-navy"] + .rm-italics, 
+[data-tag^="c-navy"] + .rm-bold 
+{color: #001F3F; }
+
+[data-tag^="c-blue"] + .rm-highlight,
+[data-tag^="c-blue"] + span > .rm-page-ref--link {
+	background-color: #0074D9 !important;
+}
+
+
+[data-tag^="c-blue"] + .rm-italics, 
+[data-tag^="c-blue"] + .rm-bold {
+    color: #0074D9;
+    
+}
+
+[data-tag^="c-aqua"] + .rm-highlight,
+[data-tag^="c-aqua"] + span > .rm-page-ref--link {
+	background-color: #7FDBFF !important;
+}
+
+[data-tag^="c-aqua"] + .rm-italics, 
+[data-tag^="c-aqua"] + .rm-bold {
+    color: #7FDBFF;
+    
+}
+
+[data-tag^="c-teal"] + .rm-highlight,
+[data-tag^="c-teal"] + span > .rm-page-ref--link {
+	background-color: #39CCCC !important;
+}
+
+
+[data-tag^="c-teal"] + .rm-italics,
+[data-tag^="c-teal"] + .rm-bold {
+    color: #39CCCC;
+    
+}
+
+
+[data-tag^="c-olive"] + .rm-highlight,
+[data-tag^="c-olive"] + span > .rm-page-ref--link {
+	background-color: #3D9970 !important;
+}
+
+[data-tag^="c-olive"] + .rm-italics,
+[data-tag^="c-olive"] + .rm-bold {
+    color: #3D9970;
+    
+}
+
+[data-tag^="c-green"] + .rm-highlight,
+[data-tag^="c-green"] + span > .rm-page-ref--link {
+	background-color: #2ECC40 !important;
+}
+
+[data-tag^="c-green"] + .rm-italics,
+[data-tag^="c-green"] + .rm-bold {
+    color: #2ECC40;
+    
+}
+
+
+[data-tag^="c-lime"] + .rm-highlight,
+[data-tag^="c-lime"] + span > .rm-page-ref--link {
+
+	background-color: #01FF70 !important;
+
+}
+
+[data-tag^="c-lime"] + .rm-italics,
+[data-tag^="c-lime"] + .rm-bold {
+    color: #01FF70;
+    
+}
+
+[data-tag^="c-yellow"] + .rm-highlight,
+[data-tag^="c-yellow"] + span > .rm-page-ref--link {
+
+	background-color: #FFDC00 !important;
+
+}
+
+[data-tag^="c-yellow"] + .rm-italics,
+[data-tag^="c-yellow"] + .rm-bold {
+    color: #FFDC00;
+    
+}
+
+[data-tag^="c-orange"] + .rm-highlight,
+[data-tag^="c-orange"] + span > .rm-page-ref--link {
+
+	background-color: #FF851B !important;
+
+}
+
+[data-tag^="c-orange"] + .rm-italics,
+[data-tag^="c-orange"] + .rm-bold {
+    color: #FF851B;
+    
+}
+
+
+[data-tag^="c-red"] + .rm-highlight,
+[data-tag^="c-red"] + span > .rm-page-ref--link {
+
+	background-color: #FF4136 !important;
+
+}
+
+[data-tag^="c-red"] + .rm-italics,
+[data-tag^="c-red"] + .rm-bold
+{
+    color: #FF4136;
+    
+}
+
+ 
+
+
+
+
+
+
+
+[data-tag^="c-fuchsia"] + .rm-highlight,
+[data-tag^="c-fuchsia"] + span > .rm-page-ref--link {
+
+	background-color: #F012BE !important;
+
+}
+
+[data-tag^="c-fuchsia"] + .rm-italics, 
+[data-tag^="c-fuchsia"] + .rm-bold {
+    color: #F012BE;
+    
+}
+
+[data-tag^="c-purple"] + .rm-highlight,
+[data-tag^="c-purple"] + span > .rm-page-ref--link {
+
+	background-color: #B10DC9 !important;
+
+}
+
+[data-tag^="c-purple"] + .rm-italics,
+[data-tag^="c-purple"] + .rm-bold {
+    
+    color: #B10DC9;
+}
+
+[data-tag^="c-maroon"] + .rm-highlight,
+[data-tag^="c-maroon"] + span > .rm-page-ref--link {
+
+	background-color: #85144B !important;
+
+}
+
+[data-tag^="c-maroon"] + .rm-italics,
+[data-tag^="c-maroon"] + .rm-bold {
+    color: #85144B;
+    
+}
+
+[data-tag^="c-silver"] + .rm-highlight,
+[data-tag^="c-silver"] + span > .rm-page-ref--link {
+
+	background-color: #DDDDDD !important;
+
+}
+
+[data-tag^="c-silver"] + .rm-italics,
+[data-tag^="c-silver"] + .rm-bold {
+    color: #DDDDDD;
+    
+}
+
+[data-tag^="c-gray"] + .rm-highlight,
+[data-tag^="c-gray"] + span > .rm-page-ref--link {
+
+	background-color: #AAAAAA !important;
+
+}
+
+[data-tag^="c-gray"] + .rm-italics,
+[data-tag^="c-gray"] + .rm-bold {
+    color: #AAAAAA;
+    
+}
+
+[data-tag^="c-black"] + .rm-highlight,
+[data-tag^="c-black"] + span > .rm-page-ref--link {
+
+	background-color: #111111 !important;
+
+}
+
+[data-tag^="c-black"] + .rm-italics,
+[data-tag^="c-black"] + .rm-bold {
+    color: #111111;
+    
+}	
