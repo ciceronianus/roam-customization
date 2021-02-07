@@ -71,7 +71,7 @@ display:none;
 
 [data-page-links*='"blck-yellow"'] > .rm-block-main,
 [data-page-links*='"blck-chld-yellow"'],
-[data-page-links*='"chld-yellow"'] > div:nth-child(2)
+[data-page-links*='"chld-yellow"'] > .rm-block-children
 {
  
  /*  color: #856404; */
