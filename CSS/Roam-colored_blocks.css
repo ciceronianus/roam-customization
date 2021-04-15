@@ -1,21 +1,21 @@
 /*
 Author:: @CatoMinor3
-Version:: 3
+Version:: 4
 Date:: February 7, 2021
 Changes log:
+- 4.0 - added colors for blockquotes
 - 3.0 - changed : to -
-
 Support: 
 - Paypal: https://www.paypal.me/catominor3
 - Patreon: https://www.patreon.com/catominor
-
 */
 
 
 /* this code hides all block tags */
 [data-tag^="chld-"],
 [data-tag^="blck-chld-"],
-[data-tag^="blck-"] {
+[data-tag^="blck-"],
+[data-tag^="quote-"]{
 display:none;
 }
 
@@ -29,6 +29,15 @@ display:none;
     border: 1px solid #d6d8db; 
     margin-bottom: 5px;
 }
+
+[data-page-links*='"quote-grey"']
+> .rm-block-main 
+> .roam-block > blockquote {
+     background-color: #e2e3e5;
+    border-left-color: #d6d8db;
+
+}
+
 
 [data-page-links*='"blck-blue"'] > .rm-block-main,
 [data-page-links*='"blck-chld-blue"'],
@@ -44,6 +53,17 @@ display:none;
     margin-bottom: 5px;
 }
 
+
+[data-page-links*='"quote-blue"']
+> .rm-block-main 
+> .roam-block > blockquote {
+     background-color: #cce5ff;
+    border-left-color: #b8daff;
+
+}
+
+
+
 [data-page-links*='"blck-green"'] > .rm-block-main,
 [data-page-links*='"blck-chld-green"'],
 [data-page-links*='"chld-green"'] > .rm-block-children
@@ -55,6 +75,16 @@ display:none;
   
     margin-bottom: 5px;
 }
+
+
+[data-page-links*='"quote-green"']
+> .rm-block-main 
+> .roam-block > blockquote {
+     background-color: #d4edda;
+    border-left-color: #c3e6cb;
+
+}
+
 
 
 [data-page-links*='"blck-red"'] > .rm-block-main,
@@ -69,6 +99,16 @@ display:none;
     margin-bottom: 5px;
 }
 
+[data-page-links*='"quote-red"']
+> .rm-block-main 
+> .roam-block > blockquote {
+     background-color: #f8d7da;
+    border-left-color: #f5c6cb;
+
+}
+
+
+
 [data-page-links*='"blck-yellow"'] > .rm-block-main,
 [data-page-links*='"blck-chld-yellow"'],
 [data-page-links*='"chld-yellow"'] > .rm-block-children
@@ -81,3 +121,13 @@ display:none;
  
     margin-bottom: 5px;
 }
+
+[data-page-links*='"quote-yellow"']
+> .rm-block-main 
+> .roam-block > blockquote {
+     background-color: #fff3cd;
+    border-left-color: #ffeeba;
+
+}
+
+
