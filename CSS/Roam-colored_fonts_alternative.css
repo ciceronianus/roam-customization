@@ -1,8 +1,9 @@
 /*
 Author:: @CatoMinor3
-Version:: 3.5 (alternative)
-Date:: February 6, 2021
+Version:: 3.6
+Date:: April 24th, 2021
 Changes log:
+- 3.6 - small changes in the description 
 - 3.5 - changed c: to c-
 - 3.0 - code adapted for the new classes in Roam
 - 2.1 - code adaptated for future support of colour shades (different opacity), 
@@ -10,7 +11,7 @@ download the additonal CSS here: https://gist.github.com/ciceronianus/5d7b224658
 Support: 
 - Paypal: https://www.paypal.me/catominor3
 - Patreon: https://www.patreon.com/catominor
-How to use this? Simply write #c:COLOR (see supported colors below) and follow it with 
+How to use this? Simply write #c-COLOR (see supported colors below) and follow it with 
 the highlighted text, bold or italics. 
 */
 
