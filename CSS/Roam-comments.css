@@ -1,0 +1,34 @@
+/* Alpha */
+
+[data-page-links*='"<"'] 
+> .rm-block-main
+> .roam-block {
+    background-color: #e3d4d4;
+    border-radius: 5px;
+    margin-left: 8px;
+    margin-top:1px;
+    margin-bottom:1px;
+    
+    
+}
+
+[data-page-links*='"<"'] 
+> .rm-block-main
+> .roam-block:before {
+    content:'';
+    display:inline-block;
+    width:0;
+    height:0;
+    position:relative;
+
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right:8px solid #e3d4d4;
+    left:-8px;
+    top:2px;
+}
+
+[data-link-title="<"]{
+    display:none;
+    
+}
