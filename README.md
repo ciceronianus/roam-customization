@@ -3,6 +3,7 @@ Future place for my scripts that are now mainly on my Gist.
 
 # CSS
 Colored fonts and blocks. 
+And other stuff :). Simply look there!
 
 # JavaScript
 ## Tampermoneky 
