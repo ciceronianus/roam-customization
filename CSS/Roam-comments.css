@@ -1,4 +1,14 @@
-/* Alpha */
+/* Alpha 
+Author:: @CatoMinor3
+Version:: Alpha!!!
+Date:: April 4, 2021
+Support: 
+- Paypal: https://www.paypal.me/catominor3
+- Patreon: https://www.patreon.com/catominor
+How to use it? 
+Simply write [[<]] and then continue. This will create a special comment block.
+*/
+
 
 [data-page-links*='"<"'] 
 > .rm-block-main
