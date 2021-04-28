@@ -1,15 +1,150 @@
 /* Alpha 
 Author:: @CatoMinor3
-Version:: Alpha!!!
+Version:: 0.2
+Changes::
+- 0.2 - added [[A]] and [[v]] + [[<]] and [[A]] use now a different code
 Date:: April 4, 2021
 Support: 
 - Paypal: https://www.paypal.me/catominor3
 - Patreon: https://www.patreon.com/catominor
 How to use it? 
-Simply write [[<]] and then continue. This will create a special comment block.
+Simply write [[<]] and then continue. This will create a special comment block with arrow pointing left.
+[[A]] generates an arrow pointing up
+[[v]] generates an arrow pointing down
+
 */
 
+[data-page-links*='"<"'] 
+> .rm-block-main
+> .roam-block {
+    background-color: #e3d4d4;
+    border-radius: 5px;
+ /*  margin-left: 8px;
+    margin-top:1px;
+    margin-bottom:1px;*/
+    
+    
+}
 
+.rm-not-focused[data-page-links*='"<"'] 
+> .rm-block-main
+> .controls::after {
+    content:'';
+    display:inline-block;
+    width:0;
+    height:0;
+    position:relative;
+ /*   left: px; */
+    top: 2px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right:8px solid #e3d4d4;
+    
+}
+
+
+[data-page-links*='"<"'] 
+> .rm-block-main
+> .roam-block {
+    display:inline-block;
+    padding-left: 5px;
+    
+}
+
+
+[data-link-title="<"]{
+    display:none;
+    
+}
+
+/* Top */
+[data-page-links*='"A"'] 
+> .rm-block-main
+{
+  margin-top: 9px; 
+}
+
+
+
+[data-page-links*='"A"'] 
+> .rm-block-main
+> .roam-block {
+    background-color: #e3d4d4;
+    border-radius: 5px;
+}
+
+.rm-not-focused[data-page-links*='"A"'] 
+> .rm-block-main
+> .controls::after {
+    content:'';
+    display:inline-block;
+    width:0;
+    height:0;
+    position:relative;
+    top: -12px;
+    right: -30px;
+ border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #e3d4d4;
+    
+}
+
+
+[data-page-links*='"A"'] 
+> .rm-block-main
+> .roam-block {
+    display:inline-block;
+    padding-left: 5px;
+    
+}
+
+
+[data-link-title="A"]{
+    display:none;
+    
+}
+
+
+/* Down */
+
+[data-page-links*='"v"'] 
+> .rm-block-main
+> .roam-block {
+    background-color: #e3d4d4;
+    border-radius: 5px;
+    margin-left: 8px;
+    margin-top:1px;
+    margin-bottom:7px;
+      padding-left: 5px;
+}
+
+[data-page-links*='"v"'] 
+> .rm-block-main
+> .roam-block:after {
+    content:'';
+    display:block;
+    width:0;
+    height:0;
+   position:relative;
+
+    border-top: 8px solid #e3d4d4;
+    border-left: 8px solid transparent;
+    border-right:8px solid transparent;
+ 
+    left:40px;
+    bottom:-12px;
+}
+
+[data-link-title="v"]{
+    display:none;
+    
+}
+
+
+
+
+/* Old version, preserved for memeory and possible reversal */
+/*
 [data-page-links*='"<"'] 
 > .rm-block-main
 > .roam-block {
@@ -41,4 +176,4 @@ Simply write [[<]] and then continue. This will create a special comment block.
 [data-link-title="<"]{
     display:none;
     
-}
+}*/
