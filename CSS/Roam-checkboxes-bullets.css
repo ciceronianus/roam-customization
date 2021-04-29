@@ -1,0 +1,44 @@
+/*
+Author:: @CatoMinor3
+Version:: 0.5
+Date:: April 29, 2021
+Changes log:
+Support: 
+- Paypal: https://www.paypal.me/catominor3
+- Patreon: https://www.patreon.com/catominor
+
+
+*/
+
+
+
+.check-container {
+    position: absolute;
+    left: 21px; 
+    top: 7.5px;
+} 
+
+:is(.roam-table, .kanban-board) .check-container {
+    position: relative;
+      left: 0px; 
+    top: 0px;
+}
+
+
+
+.checkmark {
+    background-color:white;
+    z-index: 10;
+    border: 1px solid #9948c0;
+    border-radius: 50%;  
+}
+
+
+.check-container input:checked~.checkmark {
+    background-color: white !important;  
+}
+
+.check-container .checkmark:after {
+    border-bottom: solid #9948c0;
+    border-right: solid #9948c0;
+}
