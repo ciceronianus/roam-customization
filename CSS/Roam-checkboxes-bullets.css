@@ -1,8 +1,9 @@
 /*
 Author:: @CatoMinor3
-Version:: 0.5
+Version:: 0.6
 Date:: April 29, 2021
 Changes log:
+- 0.6 - small fixes (like in the Zoom, conflicting bullet points etc, better customization)
 Support: 
 - Paypal: https://www.paypal.me/catominor3
 - Patreon: https://www.patreon.com/catominor
@@ -10,6 +11,9 @@ Support:
 
 */
 
+:root {
+    --checkbox-color: #9948c0; /* customize the color */
+}
 
 
 .check-container {
@@ -18,7 +22,10 @@ Support:
     top: 7.5px;
 } 
 
-:is(.roam-table, .kanban-board) .check-container {
+:is(.roam-table, 
+.kanban-board,
+.rm-zoom
+) .check-container {
     position: relative;
       left: 0px; 
     top: 0px;
@@ -29,7 +36,7 @@ Support:
 .checkmark {
     background-color:white;
     z-index: 10;
-    border: 1px solid #9948c0;
+    border: 1px solid var(--checkbox-color);
     border-radius: 50%;  
 }
 
@@ -39,6 +46,18 @@ Support:
 }
 
 .check-container .checkmark:after {
-    border-bottom: solid #9948c0;
-    border-right: solid #9948c0;
+    border-bottom: solid var(--checkbox-color);
+    border-right: solid var(--checkbox-color);
 }
+
+
+:is(
+[data-page-links*='"DONE"'],
+[data-page-links*='"TODO"']
+):not(.rm-focused)
+> .rm-block-main > .controls > .rm-bullet > span
+{
+  display:none;
+    
+}
+
