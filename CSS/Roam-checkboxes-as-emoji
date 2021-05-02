@@ -1,0 +1,27 @@
+.checkmark {
+    border-width: 0px;
+}
+
+.check-container .checkmark:after{
+    content: "🙁";
+    transform: rotate(360deg) scale(1);
+   border-width: 0px;
+    opacity: 0.3;
+    top:-5px;
+    left:-4px;
+    right:0px; 
+    display:block;
+
+}
+
+
+.check-container input:checked ~ .checkmark:after {
+    content: "😊";
+   opacity: 1;   
+}
+
+
+.check-container input:checked ~ .checkmark {
+    background: white;
+}
+
