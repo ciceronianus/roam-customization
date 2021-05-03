@@ -1,0 +1,31 @@
+/* 		
+Author:: @CatoMinor3
+Version:: 1.5
+Change log::
+- 1.5 - adapted to new tags
+Date:: June 8th, 2020
+Paypal support::  https://bit.ly/2MLsnAF
+How to use it?
+
+
+*/
+
+/*Tip: You can also try: https://lingojam.com/SuperscriptGenerator */
+
+[data-tag="sup"] + .rm-highlight{
+	vertical-align: super;
+	font-size: x-small;
+	background-color: inherit;
+}
+
+[data-tag="sub"] + .rm-highlight{
+	vertical-align: sub;
+	font-size: x-small;
+	background-color: inherit;
+}
+
+[data-tag="sub"],
+[data-tag="sup"] {
+display:none;
+	
+}
