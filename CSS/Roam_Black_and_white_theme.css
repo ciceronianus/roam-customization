@@ -1,0 +1,85 @@
+/* Black and white mode */
+.roam-sidebar-container {
+  background-color: white !important;
+  border: 1px solid black !important;
+  color: black;
+}
+
+.roam-sidebar-content div,
+.roam-sidebar-content div span,
+.roam-sidebar-content div div
+{
+  color: black;
+  
+}
+
+/* changing graphs */
+.roam-sidebar-content  .rm-db-title-container .rm-db-title {
+  color: black;
+}
+.roam-sidebar-content > 
+div:nth-child(1):hover .rm-db-title-container .rm-db-title {
+	color: white;
+}
+
+/* log buttons */
+.roam-body .roam-app .roam-sidebar-container 
+.roam-sidebar-content .log-button {
+  color: black;
+}
+
+.roam-body .roam-app .roam-sidebar-container 
+.roam-sidebar-content .log-button:hover {
+  color: white;
+}
+
+.roam-body .roam-app .roam-sidebar-container 
+.roam-sidebar-content .log-button:hover div {
+  color: white;
+}
+
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button 
+.bp3-icon-small {
+  color:black;
+}
+
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content 
+.log-button:hover 
+.bp3-icon-small {
+  color:white;
+}
+
+
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content 
+.starred-pages-wrapper .starred-pages .page {
+  color:black; 
+}
+
+
+/* right sidebar */
+#right-sidebar {
+    background-color: white;
+      border: 1px solid black !important;
+
+}
+
+.sidebar-content > div {
+  border-bottom: 1px solid black !important;
+    
+    
+}
+
+.rm-sidebar-window {
+    border-bottom-width: 0px !important;
+    
+}
+
+
+
+/* Topbar */
+.rm-topbar {
+      border-bottom: 1px solid black !important;
+          border-top: 1px solid black !important;
+
+    
+}
